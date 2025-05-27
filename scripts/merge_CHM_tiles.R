@@ -6,6 +6,11 @@
 # Contact:      florian.franz@nw-fva.de
 #---------------------------------------------------------------------------------------
 
+# source setup script
+source('src/setup.R', local = T)
+
+
+
 # file path and name definitions
 #--------------------------------
 
