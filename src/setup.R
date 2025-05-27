@@ -16,29 +16,35 @@
 # 'raw_data', 'processed_data', and 'metadata'
 if (!file.exists(paste('data')) |
     (!file.exists(paste('data/raw_data')) |
-     (!file.exists(paste('data/raw_data/nDSMs')) |
-      (!file.exists(paste('data/raw_data/DOPs')) |
-       (!file.exists(paste('data/raw_data/laz_ALS')) |
-       (!file.exists(paste('data/processed_data')) |
-        (!file.exists(paste('data/processed_data/DOPs')) |
-         (!file.exists(paste('data/processed_data/nDSMs')) |
-          (!file.exists(paste('data/processed_data/laz_ALS')) |
-           (!file.exists(paste('data/processed_data/datasets')) |
-            (!file.exists(paste('data/processed_data/models')) |
-             (!file.exists(paste('data/processed_data/gap_polygons_ALS')) |
-              (!file.exists(paste('data/processed_data/gap_polygons_DAP')) |
-               (!file.exists(paste('data/metadata'))
-                )))))))))))))) {
+     (!file.exists(paste('data/raw_data/DOPs')) |
+      (!file.exists(paste('data/raw_data/laz_ALS')) |
+       (!file.exists(paste('data/raw_data/laz_DAP')) |
+        (!file.exists(paste('data/raw_data/dtm_tiles')) |
+         (!file.exists(paste('data/processed_data')) |
+          (!file.exists(paste('data/processed_data/DOPs')) |
+           (!file.exists(paste('data/processed_data/nDSMs_ALS')) |
+            (!file.exists(paste('data/processed_data/nDSMs_DAP')) |
+             (!file.exists(paste('data/processed_data/laz_ALS')) |
+              (!file.exists(paste('data/processed_data/laz_DAP')) |
+               (!file.exists(paste('data/processed_data/datasets')) |
+                (!file.exists(paste('data/processed_data/models')) |
+                 (!file.exists(paste('data/processed_data/gap_polygons_ALS')) |
+                  (!file.exists(paste('data/processed_data/gap_polygons_DAP')) |
+                   (!file.exists(paste('data/metadata'))
+                    ))))))))))))))))) {
   
   dir.create('data')
   dir.create('data/raw_data')
-  dir.create('data/raw_data/nDSMs')
   dir.create('data/raw_data/DOPs')
   dir.create('data/raw_data/laz_ALS')
+  dir.create('data/raw_data/laz_DAP')
+  dir.create('data/raw_data/dtm_tiles')
   dir.create('data/processed_data')
   dir.create('data/processed_data/DOPs')
-  dir.create('data/processed_data/nDSMs')
+  dir.create('data/processed_data/nDSMs_ALS')
+  dir.create('data/processed_data/nDSMs_DAP')
   dir.create('data/processed_data/laz_ALS')
+  dir.create('data/processed_data/laz_DAP')
   dir.create('data/processed_data/datasets')
   dir.create('data/processed_data/models')
   dir.create('data/processed_data/gap_polygons_ALS')
@@ -126,4 +132,4 @@ load_packages <- function(packages) {
 }
 
 
-load_packages(c('terra', 'sf', 'ForestGapR', 'stats','dplyr', 'ggplot2'))
+load_packages(c('gdalUtilities','terra', 'sf', 'lidR', 'ForestGapR', 'stats','dplyr', 'ggplot2'))
