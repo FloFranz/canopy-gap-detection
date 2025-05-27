@@ -29,7 +29,7 @@ preprocess_lidar_files(
   input_dir = file.path(raw_data_dir, 'laz_ALS'),
   example_pattern = '2023_06_solling_32_XXX_YYYY.laz',
   output_dir_laz = file.path(processed_data_dir, 'laz_ALS'),
-  output_dir_tif = file.path(processed_data_dir, 'nDSMs'),
+  output_dir_tif = file.path(processed_data_dir, 'nDSMs_ALS'),
   state = 'ni',
   rs_system = 'flugzeug',
   year = '2023',
