@@ -15,10 +15,10 @@ source('src/setup.R', local = T)
 #--------------------------------
 
 # input directory to CHM raster files
-input_dir <- file.path(processed_data_dir, 'nDSMs')
+input_dir <- file.path(processed_data_dir, 'nDSMs_ALS')
 
 # output directory to final CHM raster file
-output_dir <- file.path(processed_data_dir, 'nDSMs')
+output_dir <- file.path(processed_data_dir, 'nDSMs_ALS')
 
 # define file name of output CHM
 output_file_name <- 'chm_solling_2023_als.tif'
