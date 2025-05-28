@@ -20,6 +20,7 @@ if (!file.exists(paste('data')) |
       (!file.exists(paste('data/raw_data/laz_ALS')) |
        (!file.exists(paste('data/raw_data/laz_DAP')) |
         (!file.exists(paste('data/raw_data/dtm_tiles')) |
+         (!file.exists(paste('data/raw_data/test_tiles')) |
          (!file.exists(paste('data/processed_data')) |
           (!file.exists(paste('data/processed_data/DOPs')) |
            (!file.exists(paste('data/processed_data/nDSMs_ALS')) |
@@ -31,7 +32,7 @@ if (!file.exists(paste('data')) |
                  (!file.exists(paste('data/processed_data/gap_polygons_ALS')) |
                   (!file.exists(paste('data/processed_data/gap_polygons_DAP')) |
                    (!file.exists(paste('data/metadata'))
-                    ))))))))))))))))) {
+                    )))))))))))))))))) {
   
   dir.create('data')
   dir.create('data/raw_data')
@@ -39,6 +40,7 @@ if (!file.exists(paste('data')) |
   dir.create('data/raw_data/laz_ALS')
   dir.create('data/raw_data/laz_DAP')
   dir.create('data/raw_data/dtm_tiles')
+  dir.create('data/raw_data/test_tiles')
   dir.create('data/processed_data')
   dir.create('data/processed_data/DOPs')
   dir.create('data/processed_data/nDSMs_ALS')
