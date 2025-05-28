@@ -9,7 +9,49 @@ Franz, F., Seidel, D., Beckschäfer, P., 2025. Deep learning-based canopy gap de
 
 ## Folder structure
 
-...
+The project follows a structured organization for data, scripts, and outputs. Execute `src/setup.R` or `src/setup.py` to automatically create the required folder structure.
+
+```
+canopy-gap-detection/
+├── data/
+│   ├── raw_data/
+│   │   ├── DOPs/                    # DOPs (aerial imagery)
+│   │   ├── laz_ALS/                 # ALS point clouds (already ground classified)
+│   │   ├── laz_DAP/                 # DAP based point clouds
+│   │   ├── dtm_tiles/               # Digital terrain model point cloud tiles
+│   │   └── test_tiles/              # Test data tiles extent
+│   ├── processed_data/
+│   │   ├── DOPs/                    # Processed DOPs
+│   │   ├── nDSMs_ALS/               # Normalized digital surface models from ALS (raster files)
+│   │   ├── nDSMs_DAP/               # Normalized digital surface models from DAP (raster files)
+│   │   ├── laz_ALS/                 # Processed ALS point clouds
+│   │   ├── laz_DAP/                 # Processed DAP point clouds
+│   │   ├── datasets/                # Training and testing datasets
+│   │   ├── models/                  # Trained deep learning model
+│   │   ├── gap_polygons_ALS/        # Gap polygons derived from ALS data
+│   │   └── gap_polygons_DAP/        # Gap polygons derived from DAP data
+│   └── metadata/                    # Metadata and documentation files
+├── src/                             # Functions and setup scripts
+│   ├── setup.R                      # R setup script for folder creation
+│   ├── setup.py                     # Python setup script for folder creation
+│   ├── detect_gaps_multi_stage.R    # Multi-stage gap detection algorithm
+│   ├── create_mosaic.R              # Function for mosaic creation from multiple tiles
+│   ├── rename_files.R               # Utility script for file renaming
+│   ├── preprocess_lidar_files.R     # Function for LiDAR data preprocessing
+│   └── cidg.py                      # Image data generation for model training
+├── scripts/                         # Analysis and processing scripts
+│   ├── gap_generation.R             # Gap generation from ALS data
+│   ├── gap_comp_dap_vs_pred.R       # Compare DAP vs prediction results
+│   ├── model_train.ipynb            # Model training notebook
+│   ├── prediction.ipynb             # Prediction and inference notebook
+│   ├── test_data_preparation.ipynb  # Test dataset preparation
+│   ├── train_data_preparation.ipynb # Training dataset preparation
+│   ├── merge_CHM_tiles.R            # Merge ALS raster tiles
+│   ├── dap_ndsm_mosaic_creation.R   # Create nDSM mosaics from DAP data
+│   ├── dap_cloud_2_ndsm.R           # DAP point cloud processing
+│   └── lidar_preprocessing.R        # ALS point cloud processing
+└── output/                          # Results and output files
+```
 
 ## Requirements
 
