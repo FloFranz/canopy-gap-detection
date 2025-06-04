@@ -7,7 +7,8 @@
 #               - renaming input files
 #               - point cloud normalization
 #               - filter values below -1m and above 55m.
-#               - noise points are classified using IVF with resolution 5 x 5 x 5 = 125 voxels and max. 6 other points
+#               - noise points are classified using IVF with resolution 5 and
+#                 examining 3 x 3 x 3 = 27 neighboring voxels with max. 6 other points
 #               - drop these classified noise points
 #               - the normalized and filtered point clouds are written to disk
 #               - calculation of a canopy height model (CHM) in 0.5 m resolution
