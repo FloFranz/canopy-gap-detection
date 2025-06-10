@@ -210,8 +210,8 @@ for (las_file in las_files_list) {
   
   point_space_list <- append(
     point_space_list,
-    lidR::cloud_metrics(las_file, func = ~sqrt(1/lidR::density(las_file))))
-  
+    lidR::cloud_metrics(las_file, func = ~sqrt(1/lidR::density(las_file)))
+    )
   
 }
 
@@ -267,7 +267,7 @@ dtm_raster_list <- lapply(dtm_common_list,
                                                     algorithm = lidR::knnidw(),
                                                     use_class = 0))
 
-# calculate nDSMs by normalizing the thinned point clouds with the DTM filesin
+# calculate nDSMs by normalizing the thinned point clouds with the DTM files
 print('calculate nDSMs')
 
 nlas_list <- mapply(FUN = function(x, y) lidR::normalize_height(x, y),
