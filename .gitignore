@@ -51,9 +51,6 @@ rsconnect/
 # data folder
 # allow models folder
 data/
-!data/processed_data/
-data/processed_data/*
-!data/processed_data/models/
 
 # output folder
 output/
