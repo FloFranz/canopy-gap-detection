@@ -5,7 +5,7 @@
 
 This repository contains code for forest canopy gap detection using a deep learning model trained on gaps automatically generated from Airborne Laser Scanning (ALS)-derived Canopy Height Models (CHMs), combined with spectral (True Digital Orthophotos) and height information from Digital Aerial Photogrammetry (DAP)-based CHMs. For further details, see the following paper:
 
-Franz, F., Seidel, D., Beckschäfer, P., in press. Deep learning-based canopy gap detection using a cross-technological approach with airborne laser scanning and aerial imagery data. *Ecol. Informatics.* https://doi.org/10.1016/j.ecoinf.2025.103558.
+Franz, F., Seidel, D., Beckschäfer, P., 2026. Deep learning-based canopy gap detection using a cross-technological approach with airborne laser scanning and aerial imagery data. *Ecol. Informatics.* 93, 103558. https://doi.org/10.1016/j.ecoinf.2025.103558.
 
 The datasets to reproduce the analysis as well as the trained model are available on [Zenodo](https://zenodo.org/records/17829462).
 
@@ -63,11 +63,12 @@ canopy-gap-detection/
 ## Citation
 
 ```
-@article{FRANZ2025103558,
+@article{FRANZ2026103558,
 title = {Deep learning-based canopy gap detection using a cross-technological approach with airborne laser scanning and aerial imagery data},
 journal = {Ecological Informatics},
+volume = {93},
 pages = {103558},
-year = {2025},
+year = {2026},
 issn = {1574-9541},
 doi = {https://doi.org/10.1016/j.ecoinf.2025.103558},
 url = {https://www.sciencedirect.com/science/article/pii/S1574954125005679},
