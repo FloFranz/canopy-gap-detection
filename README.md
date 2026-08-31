@@ -1,3 +1,5 @@
+
+
 # Deep learning-based canopy gap detection using a cross-technological approach with airborne laser scanning and aerial imagery data
 
 ![](subareas_test_tile1.png)
@@ -11,7 +13,7 @@ The datasets to reproduce the analysis as well as the trained model are availabl
 
 ## Folder structure
 
-The project follows a structured organization for data, scripts, and outputs. Execute `src/setup.R` or `src/setup.py` to automatically create the required folder structure.
+The project follows a structured organization for data, scripts, and outputs. Execute `src/setup.R` or run `setup.py` from the `src/` directory to automatically create the required folder structure.
 
 ```
 canopy-gap-detection/
